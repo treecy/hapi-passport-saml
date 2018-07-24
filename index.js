@@ -4,9 +4,7 @@ exports.register = function (server, options) {
         .create(options).saml;
 
     server.expose('instance', saml);
-};
+}
 
-exports.register.attributes = {
-    pkg: require('./package.json')
-};
+exports.pkg = require('./package.json');
 
